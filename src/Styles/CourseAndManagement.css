@@ -1,0 +1,380 @@
+/* Teacher tag style */
+.tag {
+  display: inline-block;
+  background-color: #e0f2ff; /* Light blue background */
+  color: #0366d6; /* Text color */
+  padding: 4px 10px;
+  margin: 2px 2px 2px 0;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.courseandmanagement-teachers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.courseandmanagement-teachers label {
+
+    border: 2px solid var(--color-gray-300);
+    padding: 4px 10px;
+    margin: 2px 2px 2px 0;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    
+}
+/* Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* dim background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow-y: auto; /* page scroll if needed */
+  padding: 20px;
+}
+
+/* Modal card */
+.modal-card {
+  max-width: 700px;
+  width: 100%;
+  background: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  padding: 25px 30px;
+  position: relative;
+  max-height: 90vh;       /* limit height */
+  overflow-y: auto;       /* scroll inside modal */
+  scrollbar-width: thin;  /* for Firefox */
+  scrollbar-color: transparent transparent; /* hide scrollbar */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hide scrollbars (Webkit) */
+.modal-card::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+/* Form header */
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+
+
+
+
+/* Form inputs */
+.user-form input,
+.user-form select,
+.user-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+}
+
+.user-form input:focus,
+.user-form select:focus,
+.user-form textarea:focus {
+  border-color: #007bff;
+}
+
+/* Form group spacing */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Form row */
+.form-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Checkbox group */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  gap: 10px;
+}
+
+/* Tag pills */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  background: #e0f3ff;
+  color: #007bff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin: 3px 3px 3px 0;
+}
+
+.material-tag {
+  background: #fff4e6;
+  color: #fa8c16;
+  border: 1px solid #ffd591;
+}
+
+.tag-remove {
+  margin-left: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: inline-block;
+  color: #fa541c;
+  transition: color 0.2s;
+}
+
+.tag-remove:hover {
+  color: #f5222d;
+}
+
+/* Form actions */
+.form-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* ===============================
+  Instructor Assignment Card
+================================= */
+.assignment-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  transition: all 0.3s ease;
+}
+
+.assignment-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 5px;
+}
+
+.assignment-card .subtitle {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* Mapping Option Buttons */
+.mapping-options {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.option-btn {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #f3f4f6;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.option-btn.active {
+   background: linear-gradient(135deg, var(--brand-pink) 0%, var(--brand-orange) 100%);
+  color: #fff;
+  border-color: linear-gradient(135deg, var(--brand-pink) 0%, var(--brand-orange) 100%);;
+}
+
+.option-btn:hover:not(.active) {
+  background: #e0e7ff;
+}
+
+/* Mapping Lists Layout */
+.mapping-lists {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Primary List (Course or Instructor) */
+.primary-list {
+  flex: 1;
+  min-width: 280px;
+  background: #f9fafb;
+  padding: 15px;
+  border-radius: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.primary-list h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #374151;
+}
+
+.primary-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.primary-list li {
+  padding: 8px 12px;
+  margin-bottom: 6px;
+  background: #e5e7eb;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.primary-list li:hover {
+  background: #d1d5db;
+}
+
+.primary-list li.selected {
+  color: red;
+  border: 2px solid red;
+  background-color: white;
+}
+
+/* Secondary List (Checkbox Group / Assignments) */
+.secondary-list {
+  flex: 2;
+  min-width: 280px;
+  background: #f9fafb;
+  padding: 15px;
+  border-radius: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.secondary-list h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #374151;
+}
+
+.secondary-list .checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.secondary-list .checkbox-label {
+  background: #f3f4f6;
+  padding: 5px 12px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.secondary-list .checkbox-label:hover {
+   background: linear-gradient(135deg, var(--brand-pink) 0%, var(--brand-orange) 100%);
+   color: white;
+}
+
+.secondary-list input[type="checkbox"] {
+  accent-color: red;
+  color: red;
+}
+
+/* Selected Pills Above Secondary List */
+.secondary-list .selected-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+
+.secondary-list .selected-pills .pill {
+  background: #2563eb;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 12px;
+  border:  linear-gradient(135deg, var(--brand-pink) 0%, var(--brand-orange) 100%);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.85rem;
+}
+
+.secondary-list .selected-pills .pill .remove {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Scrollbar Styles */
+.primary-list::-webkit-scrollbar,
+.secondary-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.primary-list::-webkit-scrollbar-thumb,
+.secondary-list::-webkit-scrollbar-thumb {
+  background-color: #d1d5db;
+  border-radius: 3px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .mapping-lists {
+    flex-direction: column;
+  }
+
+  .primary-list,
+  .secondary-list {
+    width: 100%;
+    max-height: 300px;
+  }
+}
