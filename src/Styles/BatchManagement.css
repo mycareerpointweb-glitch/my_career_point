@@ -1,0 +1,119 @@
+.batch-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.batch-box-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.batch-box {
+  flex: 1 1 250px;
+  background: #f5f7fb;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+
+
+.batch-box h3 {
+  margin: 0;
+  color: #333;
+}
+
+.batch-box p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.batch-box span {
+  display: block;
+  font-size: 13px;
+  color: #666;
+}
+
+.batch-box .student-count {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.student-table-container {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-table th,
+.student-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.student-table th {
+  background: #f1f5fb;
+  font-weight: bold;
+  color: #333;
+}
+
+.student-table tr:hover {
+  background: #f9fbff;
+}
+
+@media (max-width: 768px) {
+  .batch-box-container {
+    flex-direction: column;
+  }
+}
+
+.user-management .batch-card-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.batch-card {
+  flex: 1 1 200px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+ .batch-card.selected {
+ border:2px solid  red;
+  transform: scale(1.03);
+}
+.filter-tag-batch-tags-filter{
+    margin: 5px;
+    display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  background: linear-gradient(135deg, var(--brand-pink) 0%, var(--brand-orange) 100%);
+  color: var(--color-white);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
